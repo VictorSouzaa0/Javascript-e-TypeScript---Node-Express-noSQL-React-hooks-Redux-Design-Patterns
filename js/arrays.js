@@ -17,3 +17,14 @@ const students = ["Victor","Pedro","joao"];
 // adcionando uma nova string no array selecionado
 // students[3] = "Otávio"
 // console.log(students)['Victor', 'Pedro', 'joao', 'Otávio']
+// --------------------------------------------------------------------------------------------------------
+//função usada para adicionar um item no array
+// students.push("Junior")
+// console.log(students) ["Victor","Pedro","joao","Junior"]
+// ------------------------------------------------------------------------------------------------------
+//função push no array realiza a inserção no final do array
+// students.push("Alan")
+// console.log(students)['Victor', 'Pedro', 'joao', 'Alan']
+//Função unshift faz a inserção no iniicio do array
+// students.unshift("Alberto");["Alberto","Victor","Pedro","joao"]
+// console.log(students) 
