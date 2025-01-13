@@ -17,20 +17,20 @@ function calculatorIMC (){
         const result = operator;
 
         if (result >= 0 && result <= 18.4){
-            alert('Abaixo do peso')
+            alert(`Abaixo do peso ${result.toFixed(2)}`)
         }else if(result >= 18.5 && result <=24.9){
-            alert('Peso normal')
+            alert(`Peso normal ${result.toFixed(2)}`)
         }else if(result >=25 && result <=29.9){
-            alert('Sobrepeso')
+            alert(`Sobrepeso ${result.toFixed(2)}`)
         }else if(result >=30 && result <= 34.9){
-            alert('Obesidade 1° grau')
+            alert(`Obesidade 1° grau ${result.toFixed(2)}`)
         }else if(result >= 35 && result <= 39.9){
-            alert('Obesidade de 2° grau')
+            alert(`Obesidade de 2° grau ${result.toFixed(2)}`)
         }else{
-            alert('Obesidade de 3° grau')
+            alert(`Obesidade de 3° grau ${result.toFixed(2)}`)
         }
 
-        
+        console.log(peopleIMC)
     }
     form.addEventListener('submit',ReciveEventForm);
 }
