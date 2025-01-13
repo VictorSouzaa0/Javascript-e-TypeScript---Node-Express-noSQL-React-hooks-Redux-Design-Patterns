@@ -52,11 +52,9 @@ form input {
     height: 50px;
     padding: 0 20px;
 }
-form input:focus {
-    outline: 1px solid var(--primary-color);
-  }
-  
-  form button {
+
+
+form button {
     border: none;
     background-color: #3e12ff;
     color: #ffffff;
@@ -67,6 +65,11 @@ form input:focus {
     margin-top: 30px;
     border-radius: 10px;
   }
+
+form button:hover{
+    background-color: #ffffff;
+    color: #3e12ff;
+}
 
 .imc{
     display: flex;
