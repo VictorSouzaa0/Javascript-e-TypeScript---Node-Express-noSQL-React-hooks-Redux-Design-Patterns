@@ -26,7 +26,7 @@ function calculatorIMC (){
             alert(`Obesidade 1° grau ${result.toFixed(2)}`)
         }else if(result >= 35 && result <= 39.9){
             alert(`Obesidade de 2° grau ${result.toFixed(2)}`)
-        }else{
+        }else if(result >=40){
             alert(`Obesidade de 3° grau ${result.toFixed(2)}`)
         }
 

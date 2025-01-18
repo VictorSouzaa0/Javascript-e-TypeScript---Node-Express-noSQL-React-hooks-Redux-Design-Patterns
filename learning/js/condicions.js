@@ -61,3 +61,9 @@ if(haveMoney){
     console.log('Dont have money')
 }
 */
+
+// operador ternário
+score = 900
+
+medSalary = score >= 800 ? 'crédito aprovado' : 'crédito não aprovado'
+console.log(medSalary)
