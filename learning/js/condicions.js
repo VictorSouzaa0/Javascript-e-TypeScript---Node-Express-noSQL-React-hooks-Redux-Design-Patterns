@@ -63,7 +63,14 @@ if(haveMoney){
 */
 
 // operador ternário
-score = 900
+// score = 800
+// // (condição) ? "Valor verdadeiro"  : "valor falso";
+// medSalary = score >= 800 ? 'crédito aprovado' : 'crédito não aprovado'
+// console.log(medSalary)
 
-medSalary = score >= 800 ? 'crédito aprovado' : 'crédito não aprovado'
-console.log(medSalary)
+colorUser = null
+//inserindo valor padrão para variável
+//se a cro do iisário for 'null' ela é substituída pela cor 'black'
+defaultColor = colorUser || 'black'
+
+console.log(defaultColor)
