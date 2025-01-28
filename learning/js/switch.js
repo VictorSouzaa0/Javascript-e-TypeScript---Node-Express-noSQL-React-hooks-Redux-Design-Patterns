@@ -16,7 +16,7 @@ function getDayweek(weekDay) {
             dayWeektext = 'Quarta-Feira'
             return dayWeektext
         case 4:
-            dayWeektext = 'Quiunta=Diaya';
+            dayWeektext = 'Quinta=Feira';
             return dayWeektext
         case 5:
             dayWeektext = 'Sexta=Feira';
