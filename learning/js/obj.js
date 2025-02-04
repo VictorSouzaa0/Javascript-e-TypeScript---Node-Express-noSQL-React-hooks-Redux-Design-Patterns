@@ -15,20 +15,33 @@
 // const thirdP = (addPeople('Davi','Luca',1))
 // console.log(thirdP)
 //Quando uma função esta dentro dentro de um objeto ele é chamada de método
-const people = {
-    name:'Victor',
+// const people = {
+//     name:'Victor',
+//     surname:'Souza',
+//     age:20,
+// //método speak
+//     speak() {
+//         console.log(`My current age is ${this.age}`)
+//     },
+// //método de incremento
+//     incrementAge(){
+//         this.age++;
+//     }
+// };
+
+// people.speak();
+// people.incrementAge();
+// people.speak();
+
+
+const me ={
+    name: 'Victor',
     surname:'Souza',
     age:19,
-//método speak
-    speak() {
-        console.log(`My current age is ${this.age}`)
-    },
-//método de incremento
-    incrementAge(){
-        this.age++;
+    addrres: {
+        road:'Benjamin',
+        number: 1230
     }
-};
+}
 
-people.speak();
-people.incrementAge();
-people.speak();
+console.log(` Olá, me chamo ${me.name} ${me.surname} tenho ${me.age} e moro em ${me.address}`)

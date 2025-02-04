@@ -22,7 +22,7 @@ function getDayweek(weekDay) {
             dayWeektext = 'Sexta=Feira';
             return dayWeektext
         case 6:
-            dayWeektext = 'Sánado';
+            dayWeektext = 'Sábado';
             return dayWeektext
 
             default:
