@@ -12,3 +12,10 @@
 // for (let x = 0; x <fruits.length; x++){
 //     console.log(`Índice ${x}`,fruits[x])
 // }
+
+const fruits = ['Maça','pera','Uva','Pessego','tanjerinha',
+    'morango'
+]
+for(let i = 0; i < fruits.length; i ++) {
+    console.log(`Numero ${i}`,fruits[i])
+}
