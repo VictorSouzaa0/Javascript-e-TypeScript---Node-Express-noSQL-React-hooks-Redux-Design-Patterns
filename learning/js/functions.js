@@ -1,26 +1,67 @@
-// function greeting (nm) {
-//      return `Good morning ${nm}!`
+// // Declaração de função (Function hosting)
+// // speakHi()
+// // function speakHi(){
+// //     console.log('Hii')
+// // }
+
+// //First-class objects (Objetos de primeira classe)
+
+// // Function expression
+
+// // const imData = function(){
+// //     console.log('Sou um dado')
+// // };
+
+// // function exeFunction(functio){
+// //     console.log('I will execute your function below:')
+// //     functio();
+// // }
+// // exeFunction(imData)
+
+// const name = 'Victor';
+
+// function speakName(){
+//     const name = 'Souza'
+//     console.log(name)
 // }
-// //chamando a função greeting, e passando o valor 'victor' como argumento.
-// const vr = greeting('victor');
-// console.log(vr)
+// // a funçao léxica conhece o lugar que foi declarada e o que está dentro dela, e o que esta ao lado
 
-// function som(x, y) {
-//     const result = x + y
-// //solicita par retorna  a conta da função
-//     return result;
+// function usingspeak(){
+//     speakName();
+// }
+// usingspeak();
+
+//________________________________________________________________________________________________________________________________________
+//Clousers
+
+// function createFunction(){
+//     const name = 'Victor';
+//     return function(){
+//         return name
+//     }
 // }
 
-// function sub(a, b){
-//     const op = a - b;
-//     return op
-// }
+// const funcio = createFunction();
+// console.dir(funcio)
+//--------------------------------CallBack--------------------------------------------------------
 
-// console.log(sub(10,5))
-// console.log(som(2,5))
+function f1(){
+    setTimeout(function(){
+        console.log('F1')
+    },1000)
+}
 
+function age(){
+    setTimeout(function(){
+        console.log(2025)
+    },2000)
+}
 
-const threeHours = 60*60*3*1000;
-const oneDay = 60*60*24*1000;
-const date = new Date (0 + threeHours + oneDay);//31/12/1969 timestamp unix
-console.log(date.toString())
+function season(){
+    setTimeout(function(){
+        console.log('season')        
+    },500)
+}
+f1();
+age();
+season();
