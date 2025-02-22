@@ -34,14 +34,41 @@
 // people.speak();
 
 
-const me ={
-    name: 'Victor',
-    surname:'Souza',
-    age:19,
-    addrres: {
-        road:'Benjamin',
-        number: 1230
-    }
-}
+// const me ={
+//     name: 'Victor',
+//     surname:'Souza',
+//     age:19,
+//     addrres: {
+//         road:'Benjamin',
+//         number: 1230
+//     }
+// }
 
-console.log(` Olá, me chamo ${me.name} ${me.surname} tenho ${me.age} e moro em ${me.address}`)
+// console.log(` Olá, me chamo ${me.name} ${me.surname} tenho ${me.age} e moro em ${me.address}`)
+
+// const people = new Object();
+// people.name = 'Victor';
+// people.surname = 'Souza';
+// people.age = 20
+// people.speakName = function(){
+//     return(`${this.name} esta falando seu nome`)
+// };
+// people.getDateBorn = function(){
+//     const currentDate = new Date();
+//     return currentDate.getFullYear() - this.age;
+// }
+
+// console.log(people.getDateBorn())
+
+// function createPeople(name,surname) {
+//     return{
+//         name,
+//         surname,
+//         get completeName(){
+//             return `${this.name} ${this.surname}`
+//         }
+//     }
+// }
+
+// let people1 = createPeople('Victor','Souza')
+// console.log(people1.completeName)
