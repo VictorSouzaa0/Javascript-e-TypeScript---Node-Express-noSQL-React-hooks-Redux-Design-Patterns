@@ -81,17 +81,33 @@
 //     console.log('Clique enter para continuar')
 // })
 //--------------------IIFE - Immediately invoked function expression-------------------------------------------------------------------
-function createPerson(name,surname){
-    return{
-        name,
-        surname,
-        speak:function(word){ //método
-            return `${name} está ${word}.`;
-        }
+// function createPerson(name,surname){
+//     return{
+//         name,
+//         surname,
+//         speak:function(word){ //método
+//             return `${name} está ${word}.`;
+//         }
         
-    }
+//     }
+// }
+
+// const p1 = createPerson('Victor','Souza');
+// console.log(p1)
+// console.log(p1.speak('estudando JS'))
+//DefinePropety -> definePropeties
+
+function Product(name,price,stock) {
+    this.name = name;
+    this.price = price;
+
+    Object.defineProperty(this, 'stock',{
+        enumerable: true, //mostra a chave
+        value: stock, //valor da chave
+        writable: true, //pode alterar o valor
+        configurable: true //ṕde aáhar
+    })
 }
 
-const p1 = createPerson('Victor','Souza');
-console.log(p1)
-console.log(p1.speak('estudando JS'))
+const  product1 = new Product('t-shirt',20,30);
+console.log(product1)
