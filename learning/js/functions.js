@@ -103,11 +103,26 @@ function Product(name,price,stock) {
 
     Object.defineProperty(this, 'stock',{
         enumerable: true, //mostra a chave
-        value: stock, //valor da chave
-        writable: true, //pode alterar o valor
-        configurable: true //ṕde aáhar
+        configurable: true, //permite reconfigurar essa chave ou não 
+        get : function(){
+            return stock
+        },
+        set: function(value){
+            
+        } 
+        // value: stock, //valor da chave
+        // writable: true, //pode alterar o valor
     })
+
+    // Object.defineProperties(this,{
+    //     //permite definir as propriedades de qualquer chave dentro do objeto
+    // })
 }
 
 const  product1 = new Product('t-shirt',20,30);
+
 console.log(product1)
+product1.stock = 'Esse valor aqui memo'
+console.log(product1.stock)
+// console.log(Object.keys(product1)) cria um array com as chaves enumeradas
+
