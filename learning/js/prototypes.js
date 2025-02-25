@@ -98,10 +98,11 @@ Product.prototype.discount  = function (amount) {
 
 function Tshirt (name,price,color) {
     Product.call(this,name,price);
+    this.color = color
 }
 Tshirt.prototype.construtctor = Tshirt;
 //Inserindo o prototype do 'Product' ao 'Tshirt'
-Tshirt.prototype = Object.create(Product.prototype)
+Tshirt.prototype = Object.create(Product.prototype)//Camiseta herda tudo que a classe "Product" tem
 const tshirt = new Tshirt('Jersey',7.5,'black')
 const product = new Product('Gen', 10,'white')
 console.log(product)

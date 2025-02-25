@@ -97,32 +97,62 @@
 // console.log(p1.speak('estudando JS'))
 //DefinePropety -> definePropeties
 
-function Product(name,price,stock) {
-    this.name = name;
-    this.price = price;
+// function Product(name,price,stock) {
+//     this.name = name;
+//     this.price = price;
 
-    Object.defineProperty(this, 'stock',{
-        enumerable: true, //mostra a chave
-        configurable: true, //permite reconfigurar essa chave ou não 
-        get : function(){
-            return stock
-        },
-        set: function(value){
+//     Object.defineProperty(this, 'stock',{
+//         enumerable: true, //mostra a chave
+//         configurable: true, //permite reconfigurar essa chave ou não 
+//         get : function(){
+//             return stock
+//         },
+//         set: function(value){
             
-        } 
-        // value: stock, //valor da chave
-        // writable: true, //pode alterar o valor
-    })
+//         } 
+//         // value: stock, //valor da chave
+//         // writable: true, //pode alterar o valor
+//     })
 
-    // Object.defineProperties(this,{
-    //     //permite definir as propriedades de qualquer chave dentro do objeto
-    // })
+//     // Object.defineProperties(this,{
+//     //     //permite definir as propriedades de qualquer chave dentro do objeto
+//     // })
+// }
+
+// const  product1 = new Product('t-shirt',20,30);
+
+// console.log(product1)
+// product1.stock = 'Esse valor aqui memo'
+// console.log(product1.stock)
+// // console.log(Object.keys(product1)) cria um array com as chaves enumeradas
+
+//------------------------------------------------------------------------------------------------------------------------------
+//Função construtora
+
+function cratePeople(name,surname) {
+
+    const peoplePrototype = {
+        speak(){
+            console.log(`${this.name} está falando`)
+        },
+
+        drinking(){
+            console.log(`${this.name} está tomando coca`)
+        },
+
+        eating(){
+            console.log(`${this.name} está amassando um prato de comida`)
+        }
+    }
+    //atribuindo o prototype apenas para o objeto pessoa
+    return Object.create(peoplePrototype, {
+        name: {value: name},
+        surname: {value : surname},
+    })
 }
 
-const  product1 = new Product('t-shirt',20,30);
-
-console.log(product1)
-product1.stock = 'Esse valor aqui memo'
-console.log(product1.stock)
-// console.log(Object.keys(product1)) cria um array com as chaves enumeradas
-
+const p1 = cratePeople('Victor','Souza')
+console.log(p1)
+p1.speak()
+p1.drinking()
+p1.eating()
