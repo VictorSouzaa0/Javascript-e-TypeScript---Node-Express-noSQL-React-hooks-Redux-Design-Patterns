@@ -72,3 +72,16 @@
 
 // let people1 = createPeople('Victor','Souza')
 // console.log(people1.completeName)
+
+const people = [
+    {id:1, name:'Victor'},
+    {id:2, name: 'Davi'},
+    {id:3, name: 'Guilherme'},
+]
+
+const newPeoples = new Map()
+for(const peopl of people){
+    const { id } = peopl
+    newPeoples.set(id,{...peopl})
+}
+console.log(newPeoples)
